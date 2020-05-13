@@ -1,0 +1,139 @@
+body{
+	background: black;
+	color: aqua;
+}
+h1 {
+	font-size: 60px;
+	color: red;
+}
+h2 {
+	color: #ffff00;
+	margin-right: 50px;
+	margin-left: 50px;
+}
+h3 {
+	color: orange;
+}
+.text {
+	text-align: justify;
+	margin-right: 55px;
+	margin-left: 55px;
+}
+.imagen{
+	width: 400px;
+	height: 300px;
+	border: 2px solid white;
+	border-radius: 5%
+}
+.imagen:hover{
+	width: 410px;
+	height: 310px;
+	border: 5px solid white;
+	transform: 4s;
+}
+div {
+	text-align: center;
+	border: 1px solid aqua;
+	margin-top: 10px;
+	margin-bottom: 100px;
+	margin-right: 150px;
+	margin-left: 150px;
+	background-color: #333; 
+}
+strong{
+	color: #F9FF33;
+}
+@keyframes an4 {/*color de fondo de la figura el cual ira cambiando e lo largo de la animacion*/
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+.anima4{
+  width: 100px;/*largo*/
+  height: 100px;/*ancho*/
+  position: relative;/*posision de la figura*/
+  background-color: red;/*color de fondo inicial*/
+  animation-name: an4;/*nombre de la animacion*/
+  animation-duration: 5s;/*duracion de la animacion*/
+  animation-iteration-count: infinite;/*veces o tiempo en que se repetira la animacion*/
+}
+@keyframes anim5 {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; top:200px;}
+  50%  {background-color:blue; top:200px; }
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+/* The element to apply the animation to */
+.anima5 {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation-name: anim5;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+/* pantalla maximo 980px */
+
+@media screen and (max-width:980px) {
+
+.container {
+
+width:98%;
+
+}
+
+section {
+
+width:68%;
+
+}
+
+/* pantalla maximo 700px */
+@media screen and (max-width:700px) {
+aside,section {
+float:none;
+width:96%;
+font-size:1.2em;
+}
+nav, section {
+font-size:1.2em;
+}
+aside {
+margin-top:5px;
+background:#333;
+color: #fff;
+}
+nav ul {
+float:none;
+clear:both;
+}
+}
+/* pantalla maximo 480px */
+@media screen and (max-width:480px) {
+aside {
+display:block;
+background:#333;
+color: #fff;
+font-size:1.5em;
+}
+nav, section {
+font-size:1.5em;
+}
+section {
+width:94%;
+}
+nav ul {
+display: table;
+text-align: center;
+float: none;
+width:100%;
+}
+nav ul li {
+float:none;
+}
+}
